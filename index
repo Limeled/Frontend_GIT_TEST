@@ -1,11 +1,35 @@
-body {
-    margin: 0;
+* {
+    box-sizing: boder-box;
 }
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+nav a {
+    color: white;
+    background-color: slateblue;
+    padding: 12px;
+    text-decoration: none;
+}
 
 section {
-    height: 300px;
-    padding: 100px;
+    height: 100vh;
+    padding: 80px;
 }
 
 #orange { background-color: orange; }

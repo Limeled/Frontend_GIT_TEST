@@ -45,11 +45,8 @@ section {
 
 #orange { 
     background-color: orange;
-    background-image: url("");
     /* Legg til en image url */
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+
 }
 #peru { background-color: peru; }
 #royalblue { background-color: royalblue; }

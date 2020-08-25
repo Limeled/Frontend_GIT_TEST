@@ -1,5 +1,5 @@
 * {
-    box-sizing: boder-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,20 +18,38 @@ nav {
     gap: 8px;
     grid-auto-flow: column;
     justify-content: end;
+    margin: 0 30px;
 }
 
 nav a {
     color: white;
-    background-color: slateblue;
+    background-color: lime;
     padding: 12px;
     text-decoration: none;
 }
 
-section {
+main {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     height: 100vh;
-    padding: 80px;
+    overflow: auto;
 }
 
-#orange { background-color: orange; }
+section {
+    scroll-snap-align: center;
+    height: 100vh;
+    padding: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+#orange { 
+    background-color: orange;
+    background-image: url("");
+    /* Legg til en image url */
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
 #peru { background-color: peru; }
 #royalblue { background-color: royalblue; }
